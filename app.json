@@ -1,0 +1,56 @@
+{
+    "name": "Titans Force Sub Bot",
+    "description": "Python based bot to Force Users to sub a channel.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "pyrogram",
+        "pyrogrambot",
+        "telegram-bot",
+        "Forcesub",
+        "ForceSubBot"
+    ],
+    "repository": "https://github.com/hackelite01",
+    "website": "https://t.me/thetitans_userbot",
+    "success_url": "https://t.me/hackelite01",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "APP_ID": {
+            "description": "You APP ID from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": "",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Your bot updates channel username without @ or leave empty",
+            "value": "",
+            "required": false
+        },
+        "SUDO_USERS": {
+            "description": "Sudo users I'd",
+            "value": "",
+            "required": false
+        }
+    },
+    "addons": [
+    {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+  ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
